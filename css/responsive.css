@@ -1,0 +1,180 @@
+/* ===================================================================
+   AI STUDY PLANNER - RESPONSIVE STYLESHEET
+   Mobile, Tablet, and Desktop Optimization
+   =================================================================== */
+
+/* --- TABLET & MEDIUM DESKTOPS (<= 1100px) --- */
+@media (max-width: 1100px) {
+  .dashboard-grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .timetable-builder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .notes-layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-grid-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- MOBILE & TABLET PORTRAIT (<= 900px) --- */
+@media (max-width: 900px) {
+  :root {
+    --sidebar-width: 260px;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    box-shadow: none;
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 95;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .sidebar-backdrop.active {
+    display: block;
+    opacity: 1;
+  }
+
+  .main-wrapper {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topbar {
+    padding: 0 1.25rem;
+  }
+
+  .content-area {
+    padding: 1.25rem;
+  }
+
+  .dashboard-hero-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.6rem;
+  }
+
+  .hero-quick-stats {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero-stat-pill {
+    flex: 1;
+    min-width: 0;
+    padding: 0.8rem;
+  }
+
+  .stats-cards-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .assistant-chat-container {
+    height: calc(100vh - 180px);
+    min-height: 480px;
+  }
+}
+
+/* --- SMALL MOBILE (<= 600px) --- */
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  .topbar-search-container {
+    display: none; /* Collapses search into a toggle or hidden on tiny screens */
+  }
+
+  .topbar-streak-chip span.streak-text {
+    display: none;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .page-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .stats-cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  form div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  .assignment-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .notes-masonry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timer-circular-wrap {
+    width: 250px;
+    height: 250px;
+  }
+  .timer-countdown-time {
+    font-size: 2.8rem;
+  }
+
+  .modal-dialog {
+    margin: 0.5rem;
+    max-height: 95vh;
+  }
+
+  .toast-container {
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+  }
+  .toast {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .rewards-level-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}

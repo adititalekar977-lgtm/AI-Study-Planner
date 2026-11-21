@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="url(#bgGrad)"/>
+  <!-- Open Book / Network Nodes -->
+  <path d="M28 88C38 88 50 82 60 76C70 82 82 88 92 88" stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M28 34C38 34 50 40 60 46C70 40 82 34 92 34V80C82 80 70 74 60 68C50 74 38 80 28 80Z" fill="rgba(255, 255, 255, 0.15)" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="60" y1="46" x2="60" y2="88" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <!-- Signal Transmission Pulse Waves -->
+  <circle cx="60" cy="22" r="4" fill="url(#accentGrad)"/>
+  <path d="M50 18A14 14 0 0 1 70 18" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M42 12A24 24 0 0 1 78 12" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>
