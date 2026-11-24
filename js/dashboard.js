@@ -255,19 +255,26 @@ const Dashboard = {
   bindEvents() {
     // Quick Action Buttons
     const quickActions = {
-      'btnQuickTimetable': 'timetable',
-      'btnQuickAssistant': 'assistant',
-      'btnQuickTimer': 'timer',
-      'btnQuickQuiz': 'quiz',
-      'btnQuickAssignment': 'assignments',
-      'btnQuickNote': 'notes'
+      'btnQuickTimetable': () => App.navigateTo('timetable'),
+      'btnQuickAssistant': () => App.navigateTo('assistant'),
+      'btnQuickTimer': () => App.navigateTo('timer'),
+      'btnQuickQuiz': () => App.navigateTo('quiz'),
+      'btnQuickAssignment': () => App.navigateTo('assignments'),
+      'btnQuickNote': () => {
+        App.navigateTo('notes');
+        Notes.switchTab('organizer');
+      },
+      'btnQuickSummarizer': () => {
+        App.navigateTo('notes');
+        Notes.switchTab('summarizer');
+      }
     };
 
     Object.keys(quickActions).forEach(btnId => {
       const btn = document.getElementById(btnId);
       if (btn) {
         btn.addEventListener('click', () => {
-          App.navigateTo(quickActions[btnId]);
+          quickActions[btnId]();
         });
       }
     });

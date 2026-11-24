@@ -212,8 +212,12 @@ const App = {
         const query = searchInput.value.trim().toLowerCase();
         if (!query) return;
 
-        if (query.includes('note') || query.includes('summary')) {
+        if (query.includes('summar')) {
           this.navigateTo('notes');
+          Notes.switchTab('summarizer');
+        } else if (query.includes('note')) {
+          this.navigateTo('notes');
+          Notes.switchTab('organizer');
         } else if (query.includes('exam') || query.includes('test') || query.includes('date')) {
           this.navigateTo('exams');
         } else if (query.includes('quiz') || query.includes('question')) {

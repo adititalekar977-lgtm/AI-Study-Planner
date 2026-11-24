@@ -1,13 +1,13 @@
-# AI Study Planner 🎓
+# AI Notes Organizer & Summarizer 🎓
 
 > **College Course Project: Data Communication & Networking Lab**  
-> *An intelligent, offline-capable study management platform engineered with HTML5, CSS3, Vanilla JavaScript, and LocalStorage.*
+> *An intelligent, offline-capable academic notes organization & NLP text summarization platform engineered with HTML5, CSS3, Vanilla JavaScript, and LocalStorage.*
 
 ---
 
 ## 📌 1. Project Overview
 
-**AI Study Planner** is an all-in-one academic productivity platform developed for engineering students. It consolidates daily course routines, automated timetable generation, assignment management, exam countdowns, digital lab notes, focused Pomodoro intervals, curriculum quizzes, and interactive AI study assistance into a single unified SaaS-style interface.
+**AI Notes Organizer & Summarizer** is an all-in-one academic productivity platform developed for engineering students. It integrates smart notes organization (folders, tags, favourites, advanced multi-criteria search), a 100% offline client-side NLP text summarization engine (short/medium/detailed summaries, bullet points, key point extraction, and revision study sheets), alongside automated timetable generation, assignment tracking, exam countdowns, focused Pomodoro intervals, curriculum quizzes, and interactive AI study assistance into a single unified SaaS-style interface.
 
 Designed specifically as a **Data Communication Lab College Project**, this system demonstrates how complex client-side heuristic algorithms, local persistence paradigms, synthetic Web Audio synthesis, and dynamic vector charting can operate entirely offline without reliance on paid APIs, cloud databases, or external frameworks.
 
@@ -106,11 +106,22 @@ AI-Study-Planner/
 - **Dynamic Filtering**: Filter by All, Pending, In Progress, Completed, or Overdue. Real-time search by title or subject.
 - **Live Sidebar Counters**: The sidebar badge dynamically displays the count of pending assignments.
 
-### 6. Digital Notes & Lab Notebook
-- **Subject-Based Folders**: Categorizes notes (Data Communication, Computer Networks, Operating Systems, etc.).
-- **Rich Formatting & Pinning**: Pin crucial formulas or lab theorems to the top of the grid.
-- **Instant Keyword Search**: Live filtering of note titles and content.
-- **Offline Text File Export**: 1-click download of any note as a `.txt` file.
+### 6. AI Notes Organizer & Summarizer
+- **Smart Folders & Categories**: Organize lecture notes into custom subject folders (`Data Communication`, `Computer Networks`, `Operating Systems`, `AI Summaries`, etc.) with active note counts.
+- **Tags & Favourites Taxonomy**: Multi-tag tagging system (`#formula`, `#revision`, `#lab`, `#exam-prep`) with live tag filter chips and 1-click ⭐ favourites toggle.
+- **Advanced Multi-Criteria Search & Sorting**: Real-time filtering across titles, content, folders, and tags; sort by newest, oldest, title (A-Z/Z-A), word count, or favorites.
+- **Offline AI-Style NLP Text Summarizer**:
+  - **Sentence Tokenization & Stopword Filtering**: Intelligent frequency weighting and cue phrase detection (`therefore`, `defined as`, `formula`, `crucial`).
+  - **6 Distinct Summarization Modes**:
+    1. *Short Summary*: Concise 2-3 sentence executive summary (~25% length).
+    2. *Medium Summary*: Balanced overview capturing all core concepts (~45% length).
+    3. *Detailed Summary*: Comprehensive academic breakdown (~70% length).
+    4. *Bullet-Point Summary*: High-impact takeaways formatted as clear bullets.
+    5. *Important Key Points Extractor*: Isolates definitions, mathematical equations, and critical technical parameters.
+    6. *Automatic Revision Notes*: High-yield study sheet complete with Core Concepts, Key Formulas, Checklist Bullets, and Active Recall Self-Test Questions.
+- **Live Text Metrics Engine**: Real-time word counter, character counter (with/without spaces), sentence counter, paragraph counter, and estimated reading/speaking time calculation.
+- **Document Import & Export**: Import existing `.txt` and `.md` Markdown files via drag-and-drop or file picker; download notes and summaries as `.txt` or `.md`.
+- **1-Click Bridge**: Seamlessly summarize any existing note with a single click, or save any generated summary directly into digital notes with bonus XP rewards.
 
 ### 7. Focus Pomodoro Timer
 - **Three Presets**: 25-minute Focus Session, 5-minute Short Break, 15-minute Long Break.

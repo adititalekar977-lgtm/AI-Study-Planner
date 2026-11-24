@@ -152,7 +152,7 @@ const FocusTimer = {
     }
 
     // Update document title for background productivity
-    document.title = this.isRunning ? `(${formatted}) AI Study Planner` : 'AI Study Planner';
+    document.title = this.isRunning ? `(${formatted}) AI Notes Organizer & Summarizer` : 'AI Notes Organizer & Summarizer';
   },
 
   updatePlayPauseButton() {

@@ -177,4 +177,34 @@
     align-items: flex-start;
     gap: 1.25rem;
   }
+
+  .summarizer-modes-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .notes-tab-switcher {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .notes-tab-btn {
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: none;
+    border-left: 3px solid transparent;
+  }
+
+  .notes-tab-btn.active {
+    border-bottom-color: transparent;
+    border-left-color: var(--primary);
+  }
+
+  .summarizer-actions-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .summarizer-actions-bar > div {
+    flex-direction: column;
+  }
 }
