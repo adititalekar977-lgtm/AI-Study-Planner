@@ -57,6 +57,7 @@ while ($listener.IsListening) {
             $response.OutputStream.Write($errBytes, 0, $errBytes.Length)
         }
         $response.OutputStream.Close()
+        $response.Close()
     } catch {
         # Continue listening
     }
